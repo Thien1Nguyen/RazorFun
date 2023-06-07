@@ -1,0 +1,27 @@
+<h1>Here are some delicious food!</h1>
+
+@{
+    List<string> foodList = new List<string>()
+        {
+            "Apple Pie",
+            "Pizza",
+            "Cinnamon Rolls",
+            "Lasagna",
+            "Donuts",
+            "Chocolate Cake",
+            "Burritos"
+        };
+    foreach( string s in foodList)
+    {
+        if(s.StartsWith("C"))
+        {
+            <p style="color: red">@s</p>
+        }
+        else
+        {
+            <p>@s</p>
+        }
+    }
+}
+
+
